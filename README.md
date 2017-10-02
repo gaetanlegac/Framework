@@ -21,8 +21,8 @@ Les gains de performances actuelles sont de l'ordre de 20-25%
 
 # Sécurité
 
-Ce point n'a pas encore été étudié.
-Les rapports d'OWASP seront exploités à venir.
+Certaines failles n'ont pas encore été étudiées.
+Les rapports d'OWASP serveront de référence à l'avenir.
 
 # Incomplet
 
