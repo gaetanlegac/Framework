@@ -1,0 +1,40 @@
+/***********************************************************
+************************** MESSAGES ************************
+************************************************************/
+.debug-noyau, .erreur-noyau {
+    padding: 6px 0px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    z-index: 100;
+}
+
+.debug-noyau {
+    background: #000;
+}
+
+.erreur-noyau {
+    background: #c0392b;
+}
+
+.erreur-noyau .details {
+    position: relative;
+    margin: 10px 0px -10px 0px;
+    padding: 10px 0px;
+
+    background: #b0291b;
+    color: #f0c9bb;
+}
+.erreur-noyau .details .fonction,
+.erreur-noyau .details .fichier {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 5px);
+}
+.erreur-noyau .details .fonction {
+    text-align: right;
+    margin-right: 10px;
+}
+.erreur-noyau .details .fichier {
+    text-align: left;
+}

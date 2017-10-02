@@ -1,0 +1,116 @@
+body {
+    background: #1a1b21;
+    color: #fff;
+    font-size: 14px;
+    font-family: OpenSans;
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+* > a {
+    cursor: hand; cursor: pointer;
+}
+
+/* --------------------------------
+> CONTENEUR PRINCIPAL
+-------------------------------- */
+#conteneur {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------------------------
+> BARRE DE NAVIGATION FICHIERS
+-------------------------------- */
+#FichiersLogs {
+    width: 140px;
+}
+
+#ListeFichiers > a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px;
+}
+
+#ListeFichiers > a:not(.actuel):hover {
+    background: #121318;
+    color: #0090ec;
+}
+
+#ListeFichiers > a.actuel {
+    background: #0090ec;
+}
+
+/* --------------------------------
+> GESTION DES LOGS
+-------------------------------- */
+#FichiersLogs, #Logs {
+    display: flex;
+    flex-direction: column;
+}
+
+#Logs {
+    flex: 1;
+}
+
+/* --------------------------------
+> MESSAGES
+-------------------------------- */
+#messages {
+    flex: 1;
+
+    overflow-y: auto;
+    background: #121318;
+    border-left: solid 1px #222329;
+    border-top: solid 1px #222329;
+
+}
+
+.log td {
+    padding: 4px 6px;
+}
+.date, .fichier, .actions {
+    font-family: OpenSansSB;
+    font-weight: normal;
+}
+.log.info .date {
+    background: #020308;
+}
+.log.info .emplacement {
+    font-weight: bold;
+}
+
+/* --------------------------------
+> BARRE ACTIONS
+-------------------------------- */
+.actions {
+    line-height: 40px;
+    min-height: 40px;
+}
+
+.actions > * {
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 10px;
+}
+
+.actions > a {
+    position: relative;
+    border-bottom: solid 1px #fff;
+}
+
+.actions > a:hover {
+    color: #0092ef;
+    border-color: #0092ef;
+}
+
+#heureMaj {
+    float: right;
+}

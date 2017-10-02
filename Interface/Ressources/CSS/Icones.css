@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Icones';
+  src:  url('../Polices/Icones/icomoon.eot?n9thq7');
+  src:  url('../Polices/Icones/icomoon.eot?n9thq7#iefix') format('embedded-opentype'),
+    /*url('../Polices/Icones/icomoon.ttf?n9thq7') format('truetype'),*/
+    url('../Polices/Icones/icomoon.woff?n9thq7') format('woff'),
+    url('../Polices/Icones/icomoon.svg?n9thq7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"],
+.Liste .element.Categorie:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Icones' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icone-droite:before, {
+  content: "\e902";
+}
+.icone-gauche:before {
+  content: "\e903";
+}
+.icone-article:before {
+  content: "\e901";
+}
+.icone-categorie:before,
+.Liste .element.Categorie:before {
+  content: "\e900";
+}
+.icone-supprimer:before {
+  content: "\e9ac";
+}
+.icone-ajouter:before {
+  content: "\ea0a";
+}

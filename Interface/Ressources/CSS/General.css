@@ -1,0 +1,442 @@
+/***********************************************************
+************************* PRINCIPAL ************************
+************************************************************/
+html, body { height: 100% !important; }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #111 url(../Img/fond.jpg) no-repeat center;
+    background-size: cover;
+
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-family: OpenSansSB;
+}
+
+.bouton,
+.Liste a,
+#MenuContextuel > a,
+#MenuUtilisateur > a {
+    cursor: hand; cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.invisible {
+    display: none !important;
+}
+
+/***********************************************************
+*************************** TITRES *************************
+************************************************************/
+
+h1, h2 {
+    font-weight: normal;
+    font-family: OpenSansSB;
+}
+
+h1 {
+    font-size: 26px;
+    color: #133473;
+
+    margin: 20px 0px;
+}
+
+h2 {
+    display: inline-block;
+    margin: 0px;
+    font-size: 18px;
+}
+
+/***********************************************************
+*************************** BOUTONS ************************
+************************************************************/
+
+.bouton {
+    position: relative;
+    display: inline-block;
+
+    height: 36px;
+    line-height: 36px;
+    min-width: 16px;
+    background: #0065b2;
+    border: solid 1px #0055a2;
+    border-radius: 4px;
+    padding: 0px 10px;
+
+    color: #fff;
+    font-family: OpenSansSB;
+    font-size: 16px;
+}
+
+header .bouton,
+footer .bouton,
+.cadre .bouton {
+    border: none;
+    background: #032362;
+}
+
+.bouton:hover {
+    background: #54b8fb !important;
+    color: #032362;
+}
+
+/***********************************************************
+********************* CONTENEUR DE BOUTONS *****************
+************************************************************/
+/*.boutons {
+    display: flex;
+    flex-grow: 1;
+    height: 36px;
+    line-height: 36px;
+}
+
+.boutons .bouton {
+    flex: 1;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    line-height: inherit;
+}*/
+
+/***********************************************************
+************************** MESSAGES ************************
+************************************************************/
+
+.msg-erreur {
+    display: inline-block;
+
+    padding: 8px 16px;
+    background: #c0392b;
+    border: solid 1px #b0291b;
+    border-radius: 3px;
+
+    color: #fff;
+    white-space: normal;
+}
+
+/***********************************************************
+*************************** Dialogue *************************
+************************************************************/
+
+#Focus {
+    position: fixed;
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+
+    display: none;
+    background: rgba(13, 45, 108, 0.4);
+    /*background: rgba(3, 35, 98, 0.6);*/
+    z-index: 89;
+}
+#Focus[class]:not([class=""]) {
+    display: block;
+}
+#Focus.BarreNav {
+    z-index: 19;
+}
+#Focus.dialogue {
+    z-index: 89;
+}
+
+.Dialogue {
+    position: absolute;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    background: #fff;
+    min-width: 400px;
+    max-height: calc(100vh - 40px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+
+    color: #032362;
+    text-align: center;
+    font-family: OpenSansSB;
+}
+
+/*.Dialogue::before {
+    position: fixed;
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+
+    content: ' ';
+    background: rgba(13, 45, 108, 0.4);
+    z-index: 89;
+}*/
+
+.Dialogue .titre, .Dialogue .message, .Dialogue .boutons {
+    padding: 0px 20px;
+}
+.Dialogue .titre {
+    position: relative;
+    height: 50px;
+
+    line-height: 50px;
+    font-size: 18px;
+    font-family: OpenSansSB;
+    color: #0096c4;
+}
+.Dialogue.erreur .titre {
+    color: #c0392b;
+}
+.Dialogue .titre .bouton.fermer {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+
+    border: none;
+    background: #e5e5e5;
+    border-radius: 0px 3px 0px 3px;
+    color: #111;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.Dialogue .titre .bouton.fermer:hover {
+    color: #fff;
+    background: #c0392b !important;
+}
+.Dialogue .contenu {
+    border-radius: 3px;
+    flex: 1;
+    overflow: auto;
+    padding: 0px 20px 20px 20px;
+}
+.Dialogue .contenu .boutons {
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.Dialogue .boutons > .bouton {
+    padding: 0px 20px;
+    border-radius: 4px 4px 0px 0px;
+}
+.Dialogue .boutons > .bouton:hover {
+    border-color: #2488b;
+}
+.Dialogue .boutons > .bouton + .bouton {
+    margin-left: 10px;
+}
+
+/***********************************************************
+************************* FORMULAIRES **********************
+************************************************************/
+
+input[type="text"],
+input[type="password"],
+input[type="mail"],
+input[type="number"],
+input[type="date"] {
+    height: 40px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="mail"],
+input[type="number"],
+input[type="date"],
+textarea {
+    background: #fff;
+    border: solid 2px #aaaacc;
+    border-radius: 4px;
+    padding: 0px 10px;
+    font-family: OpenSansSB;
+    color: #002562;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.cadre input[type="text"],
+.cadre input[type="password"],
+.cadre input[type="mail"],
+.cadre input[type="number"],
+.cadre input[type="date"],
+.cadre textarea {
+    border: solid 1px #032463;
+}
+
+input[type="number"] { width: 80px; }
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="mail"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    outline: none; /* Vire la bordure bleu de chrome */
+    border-color: #0065b2;
+}
+
+input[type="text"][readonly] {
+    background: #eee;
+    border-color: #bbb !important;
+    cursor: not-allowed;
+}
+
+textarea {
+    padding: 10px;
+}
+
+/***********************************************************
+****************** INDICATEUR DE CHARGEMENT ****************
+************************************************************/
+
+.chargement::before,
+.chargement::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+}
+.chargement::before {
+    z-index: 50;
+
+    background: rgba(3, 35, 98, 0.5);
+}
+.chargement::after {
+    z-index: 51;
+    height: 38px;
+    width: 38px;
+    margin: auto;
+
+    background: white url(../Img/chargement.gif) no-repeat center;
+    background-size: 24px;
+    border-radius: 3px;
+}
+
+/***********************************************************
+************************* ALIGNEMENTS **********************
+************************************************************/
+
+.ibloc {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+/***********************************************************
+*************************** CADRE **************************
+************************************************************/
+.cadre {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    background: #133473;
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+}
+
+.cadre h2 {
+    margin-bottom: 20px;
+}
+
+/***********************************************************
+*********************** MENU CONTEXTUEL ********************
+************************************************************/
+
+#MenuContextuel {
+    display: none;
+    position: absolute;
+    z-index: 80;
+
+    background: rgba(0, 19, 82, 0.9);
+    border-radius: 3px;
+    padding: 10px 0px;
+    width: 180px;
+
+    color: #fff;
+}
+
+#MenuContextuel > a {
+    display: block;
+    line-height: 36px;
+    font-size: 16px;
+}
+
+#MenuContextuel hr {
+    border: none;
+    border-bottom: dashed 1px #b4c5e9;
+    margin: 10px;
+}
+
+/***********************************************************
+************************** LISTES *************************
+************************************************************/
+
+ul.Liste {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    white-space: nowrap;
+}
+
+ul.Liste > li,
+ul.Liste > li > a,
+#MenuContextuel > a {
+    height: 36px;
+    text-align: left;
+}
+
+ul.Liste > li {
+    position: relative;
+    border-left: solid 4px transparent;
+    line-height: 36px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: stretch;
+    align-items: flex-start;
+}
+
+ul.Liste > li > a,
+#MenuContextuel > a {
+    padding: 0px 8px;
+    overflow: hidden;
+}
+ul.Liste > li > a.donnee {
+    flex: 1 1 auto;
+    text-overflow: ellipsis;
+}
+ul.Liste > li:hover,
+ul.Liste > li.actuel,
+ul.Liste > li.context,
+#MenuContextuel > a:hover {
+    color: #fff;
+}
+ul.Liste > li:before {
+    padding-left: 6px;
+    font-size: 18px;
+}
+ul.Liste > li:hover {
+    z-index: 10;
+    background: #0a2b6a;
+    display: inline-flex;
+    min-width: calc(100% - 4px);
+}
+ul.Liste > li.context {
+    background: #001352 !important;
+}
+ul.Liste > li.actuel,
+ul.Liste > li.context {
+    border-color: #1970a9;
+}
+ul.Liste > li:hover a.donnee {
+    overflow: visible;
+}
+ul.Liste > li.actuel,
+#MenuContextuel > a:hover {
+    background: linear-gradient(to right, #1970a9, #3498db);
+}

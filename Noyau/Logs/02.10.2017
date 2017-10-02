@@ -1,0 +1,37 @@
+<tr class="log info">
+    <td class="date">07:54:44</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">SELECT * FROM Groupes WHERE nom=:nom LIMIT 1 avec les valeurs nom=Utilisateur sur Portfolio</td>
+</tr><tr class="log info">
+    <td class="date">07:54:44</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">Ouverture de la connexion sur la base de données « Portfolio »</td>
+</tr><tr class="log info">
+    <td class="date">07:54:44</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">SELECT * FROM Groupes WHERE rang=:id LIMIT 1 avec les valeurs id=5 sur Portfolio</td>
+</tr><tr class="log info">
+    <td class="date">07:52:25</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">SELECT * FROM Groupes WHERE nom=:nom LIMIT 1 avec les valeurs nom=Utilisateur sur Portfolio</td>
+</tr><tr class="log info">
+    <td class="date">07:52:25</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">Ouverture de la connexion sur la base de données « Portfolio »</td>
+</tr><tr class="log info">
+    <td class="date">07:52:25</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">SELECT * FROM Groupes WHERE rang=:id LIMIT 1 avec les valeurs id=5 sur Portfolio</td>
+</tr><tr class="log info">
+    <td class="date">07:52:19</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">SELECT * FROM Groupes WHERE nom=:nom LIMIT 1 avec les valeurs nom=Utilisateur sur Portfolio</td>
+</tr><tr class="log info">
+    <td class="date">07:52:18</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">Ouverture de la connexion sur la base de données « Portfolio »</td>
+</tr><tr class="log info">
+    <td class="date">07:52:18</td>
+    <td class="emplacement">-</td>
+    <td class="contenu">SELECT * FROM Groupes WHERE rang=:id LIMIT 1 avec les valeurs id=5 sur Portfolio</td>
+</tr>
