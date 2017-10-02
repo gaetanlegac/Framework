@@ -12,28 +12,28 @@ require_once(Base\Noyau ."/Noyau.php");
 require_once(Base\Noyau ."/Outils.php");
 require_once(Base\Noyau ."/Autoload.php");
 
+/* ------------------------------------------------------
+> ORM
+------------------------------------------------------ */
 // Gestion des données
 require_once(Base\Noyau\ORM ."/Donnees.php");
 require_once(Base\Noyau\ORM ."/Erreurs.php");
 require_once(Base\Noyau\ORM\BDD ."/Connexion.php");
 require_once(Base\Noyau\ORM\BDD ."/BaseRequete.php");
 require_once(Base\Noyau\ORM\BDD ."/Requetes.php");
-
-/* -----------------------------------------------------------------
-> BASES DE L'ORM
------------------------------------------------------------------ */
+// Objets
 require_once(Base\Noyau\ORM ."/Objets.php");
 require_once(Base\Noyau\ORM ."/Groupe.php");
 require_once(Base\Noyau\ORM ."/Utilisateur.php");
 
+/* ------------------------------------------------------
+> REQUETES / ROUTAGE / CONTENU
+------------------------------------------------------ */
 // Outils graphiques
 require_once(Base\Noyau\UI ."/UI.php");
 require_once(Base\Noyau\UI ."/Widgets.php");
 require_once(Base\Noyau\UI ."/Templates.php");
 
-/* -----------------------------------------------------------------
-> INTERACTIONS AVEC L'UTILISATEUR
------------------------------------------------------------------ */
 // Gestion du contenu demandé
 require_once(Base\Noyau\Boot ."/Session.php");
 require_once(Base\Noyau\Boot ."/Requete.php");
