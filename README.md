@@ -29,3 +29,4 @@ Les rapports d'OWASP seront exploités à venir.
 - Gestion des différentes pages
 - Système de widgets
 - Templating
+- Gestion des exceptions
