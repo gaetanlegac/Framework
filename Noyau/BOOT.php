@@ -31,6 +31,9 @@ require_once(Base\Noyau\UI ."/UI.php");
 require_once(Base\Noyau\UI ."/Widgets.php");
 require_once(Base\Noyau\UI ."/Templates.php");
 
+/* -----------------------------------------------------------------
+> INTERACTIONS AVEC L'UTILISATEUR
+----------------------------------------------------------------- */
 // Gestion du contenu demandé
 require_once(Base\Noyau\Boot ."/Session.php");
 require_once(Base\Noyau\Boot ."/Requete.php");
