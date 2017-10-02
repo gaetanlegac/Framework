@@ -1,4 +1,4 @@
 # Framework
 
-Projet de micro-framework PHP/JS personnel, encore en phase expérimentale et en développement actif.
-Je n'assurerais pas la mise à jour régulière du Git.
+Expérimentation d'un micro-framework PHP/JS personnel.
+Ne pas utiliser en production. Je n'assurerais pas la mise à jour régulière du Git.
