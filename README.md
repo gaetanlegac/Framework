@@ -11,10 +11,13 @@ L'ensemble est néanmoins fonctionnel.
 
 # Performances
 
-Jusqu'à présent, l'emprunte sur les performance est relativement conséquente.
-Je travaille actuellement sur l'optimisation:
-- Des entrées / sorties sur le disque
-- Du système de routage
+Jusqu'à présent, l'emprunte sur les performance est relativement conséquente, nottamment sur:
+- Les nombreuses entrées / sorties sur le disque
+- Le système de routage
+
+Je travaille actuellement sur un système de « compilation ». 
+
+Les gains de performances actuelles sont de l'ordre de 20-25%
 
 # Sécurité
 
